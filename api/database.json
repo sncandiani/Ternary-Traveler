@@ -1,29 +1,71 @@
 {
-    "places": [
-      { 
-        "id": 1, 
-        "name": "Italy", 
-        "visa_required": false 
-      },
-      { 
-        "id": 2, 
-        "name": "Switzerland", 
-        "visa_required": true 
-      },
-      { 
-        "id": 3, 
-        "name": "France", 
-        "visa_required": false
-      }
-    ],
-    "interests": [
-        {
-            "id": 1, 
-            "placeId": 1, 
-            "name": "Local Market", 
-            "description": "Local market where you can purchase local products and try the local food", 
-            "cost": 0.00, 
-            "review": "" 
-        }
-    ]
-  }
+  "places": [
+    {
+      "id": 1,
+      "name": "Italy",
+      "visa_required": false
+    },
+    {
+      "id": 2,
+      "name": "Switzerland",
+      "visa_required": true
+    },
+    {
+      "id": 3,
+      "name": "France",
+      "visa_required": false
+    }
+  ],
+  "interests": [
+    {
+      "id": 1,
+      "placeId": 1,
+      "name": "Local Market",
+      "description": "Local market where you can purchase local products and try the local food",
+      "cost": 0,
+      "review": ""
+    },
+    {
+      "name": "Macchu Picchu",
+      "description": "Probably cool",
+      "cost": "5",
+      "place": "Italy",
+      "id": 2
+    },
+    {
+      "name": "yay",
+      "description": "yay",
+      "cost": "yay",
+      "place": "France",
+      "id": 3
+    },
+    {
+      "name": "oh",
+      "description": "oh",
+      "cost": "oh",
+      "place": "Switzerland",
+      "id": 4
+    },
+    {
+      "name": "ah",
+      "description": "ah",
+      "cost": "ah",
+      "place": "France",
+      "id": 5
+    },
+    {
+      "name": "eh",
+      "description": "eh",
+      "cost": "eh",
+      "place": "Switzerland",
+      "id": 6
+    },
+    {
+      "name": "oooo",
+      "description": "oooo",
+      "cost": "oooo",
+      "place": "France",
+      "id": 7
+    }
+  ]
+}

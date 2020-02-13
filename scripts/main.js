@@ -1,5 +1,5 @@
 import api from "./apiManager.js"
-
-console.log(api.getAllTravels())
-
-console.log("hello?")
+import events from "./events.js"
+import renderInterests from "./renderInterestCard.js"
+api.getAllTravels().then(renderInterests)
+events.addSaveEventListener()
