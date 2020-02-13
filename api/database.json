@@ -27,8 +27,8 @@
     },
     {
       "name": "Fromagerie",
-      "description": "The best cheese of the alps!",
-      "cost": 70,
+      "description": "Best cheese in the world!",
+      "cost": 100,
       "placeId": 2,
       "review": "",
       "id": 2
