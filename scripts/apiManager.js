@@ -16,7 +16,12 @@ const api = {
     }, 
     getPlaces() {
         return fetch(`${baseUrl}/places`).then(resp => resp.json())
-    }
+    }, 
+    deleteButton(buttonId){
+        return fetch(`${baseUrl}/interests/${buttonId}/`, {
+            method: "DELETE"
+        });
+}
 }
 
 export default api

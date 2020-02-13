@@ -1,7 +1,7 @@
 const htmlFactory = {
     interestCardFactory(interest){
     return `
-    <section class="interestCardSection">
+    <section id="interestCardSection">
         <p>Name:${interest.name}</p>
         <p>Description:${interest.description}</p>
         <p>Cost:${interest.cost}</p>
