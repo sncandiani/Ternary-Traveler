@@ -32,6 +32,14 @@
       "placeId": 2,
       "review": "",
       "id": 2
+    },
+    {
+      "name": "Eiffel Tower",
+      "description": "Huge!",
+      "cost": 100000,
+      "placeId": 3,
+      "review": "",
+      "id": 3
     }
   ]
 }

@@ -2,6 +2,7 @@ import htmlFactory from "./interestCardHtml.js"
 
 const container = document.getElementById("interestCardContainer")
 const placeContainer = document.getElementById("interestPlaceContainer")
+const reviewContainer = document.getElementById("editCardContainer")
 
 const renderDom = {
     renderInterests(interests){
@@ -12,6 +13,10 @@ const renderDom = {
     }, 
     renderPlaces(place) {
             placeContainer.innerHTML += htmlFactory.selectPlaceFactory(place)
+    }, 
+    renderCostAndReview() {
+    
+        reviewContainer.innerHTML = htmlFactory.costAndReviewEditFactory()
     }
 }
 export default renderDom

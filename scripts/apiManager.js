@@ -21,6 +21,27 @@ const api = {
         return fetch(`${baseUrl}/interests/${buttonId}/`, {
             method: "DELETE"
         });
+}, 
+ updateFormFields(interestId) {
+    const hiddenInterestId = document.querySelector("#hiddenInterestId")
+    const costInput = document.querySelector("#interestEditCost")
+    const reviewInput = document.querySelector("#interestEditReview")
+    fetch(`http://localhost:8088/interests/${interestId}`)
+        .then(response => response.json())
+        .then(interests => {    
+            hiddenInterestId.value = interests.id
+            costInput.value = interests.cost
+            reviewInput.value = interests.review
+        })
+}, 
+updateFormFieldsFetch(interests) {
+    return fetch(`${baserlL}/${interests.hiddenInterestId}/`,{
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(interests)
+    })
 }
 }
 
