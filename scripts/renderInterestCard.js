@@ -1,10 +1,17 @@
-import interestCardFactory from "./interestCardHtml.js"
+import htmlFactory from "./interestCardHtml.js"
 
 const container = document.getElementById("interestCardContainer")
-const renderInterests = (interests) => {
-    container.innerHTML = ""
-    interests.forEach(interest => {
-        container.innerHTML += interestCardFactory(interest)
-    })
-} 
-export default renderInterests
+const placeContainer = document.getElementById("interestPlaceContainer")
+
+const renderDom = {
+    renderInterests(interests){
+        container.innerHTML = ""
+        interests.forEach(interest => {
+            container.innerHTML += htmlFactory.interestCardFactory(interest)
+        })
+    }, 
+    renderPlaces(place) {
+            placeContainer.innerHTML += htmlFactory.selectPlaceFactory(place)
+    }
+}
+export default renderDom

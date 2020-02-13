@@ -3,16 +3,19 @@ const baseUrl = "http://localhost:8088"
 //interests?_expand=place`
 const api = {
     getAllTravels() {
-        return fetch(`${baseUrl}/interests`).then(resp => resp.json())
+        return fetch(`${baseUrl}/interests?_expand=place`).then(resp => resp.json())
     }, 
     postTravel(newInterest) {
-        return fetch(`${baseUrl}/interests?_expand=place`, { // Replace "url" with your API's URL
+        return fetch(`${baseUrl}/interests`, { // Replace "url" with your API's URL
         method: "POST",
         headers: {
             "Content-Type": "application/json"
         },
         body: JSON.stringify(newInterest)
     }).then(resp => resp.json())
+    }, 
+    getPlaces() {
+        return fetch(`${baseUrl}/places`).then(resp => resp.json())
     }
 }
 
